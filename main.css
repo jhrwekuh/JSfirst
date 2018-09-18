@@ -13,7 +13,8 @@ body {
 .body-wrapper {
     display: block;
     position: relative;
-    margin: 90px 400px;
+    margin: 90px auto;
+    text-align: center;
     padding: 30px;
     background-color: #34495e;
     border-radius: 20px;
