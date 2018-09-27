@@ -1,75 +1,47 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Pierwsze proby javascript</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="jquery-3.3.1.min.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dla Paulinki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
     <div class="body-wrapper">
-            
-        <div  class="title-box flex-wrapper">
-                <h1>Borys Szygenda</h1>
-        </div>
-
-
-        <div class="boxes">
-        <div class="row-wrapper">
-        <div class="first-row flex-wrapper">
-
-            <div class="box-1 flex-wrapper">
-              <h3 class="button">SKILLS</h3>
-              <ul class="button-txt">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>PHOTOSHOP</li>
-                  <li>GIMP</li>
-                  <li>JAVASCRIPT</li>
-              </ul>
+        <div class="game-outline"><div class="game-wrapper">
+            <div class="which-player"> <!--  INFO ABOUT WHICH PLAYER STARTS - PLAYER ONE FIRST  -->
+                <p id="playerid">Player One</p>
             </div>
 
-            <div class="box-2 flex-wrapper">
-               <h3 class="button">HOBBIES</h3>
-               <ul class="button-txt">
-                    <li>HANDBALL</li>
-                    <li>IT</li>
-                    <li>FINANCE</li>
-                    <li>LIFESTYLE</li>
-                    <li>SPORT</li>
-                </ul>
+            <!--   GAME FIELD   -->
+            <!--   FIRST ROW   -->
+            <div class="row-container flex-wrapper">
+                <button class="field f1"></button>
+                <button class="field f2"></button>
+                <button class="field f3"></button>
             </div>
-
-        </div>
-
-        <div class="second-row flex-wrapper">
-
-            <div class="box-3 flex-wrapper">
-                <h3 class="button">EDUCATION</h3>
-                <ul class="button-txt edulist">
-                    <li>2013-2016: Secondary School no.6 in Poznan</li>
-                    <li>2016 - present: UCFB Wembley Football Business And Finance</li>
-                </ul>
+            <!--   SECOND ROW   -->
+            <div class="row-container flex-wrapper">
+                    <button class="field f4"></button>
+                    <button class="field f5"></button>
+                    <button class="field f6"></button>
             </div>
-
-            <div class="box-4 flex-wrapper">
-                <h3 class="button">OTHER</h3>
-                <ul class="button-txt">
-                        <li>I</li>
-                        <li>LIVE</li>
-                        <li>IN</li>
-                        <li>LONDON</li>
-                    </ul>
+            <!--   THIRD ROW   -->
+            <div class="row-container flex-wrapper">
+                        <button class="field f7"></button>
+                        <button class="field f8"></button>
+                        <button class="field f9"></button>
             </div>
-        </div>
+            <!--   END OF GAME FIELD   -->
+            <!---  RESET BUTTON   -->
+            <div class="resetbutton flex-wrapper"><button id="resetbtn">RESET</button></div>
+
         </div></div>
-    </div>
-
-    
+</div>
+<script>changePlayer();</script>
 </body>
-
 </html>
